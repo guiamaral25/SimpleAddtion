@@ -21,9 +21,18 @@ public class SimpleAddtion {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
-        int num1 = scanner.nextInt();
+        while (!scanner.hasNextInt()){
+            System.out.println("Invalid input. Please enter a valid number");
+            scanner.next(); // consume the valid input
+        }
+         int num1 = scanner.nextInt();
 
         System.out.print("Enter the second number: ");
+        while (!scanner.hasNextInt()){
+            System.out.println("Invalid input. Please enter a valid number");
+            scanner.next(); //consume the valid input
+        }
+        
         int num2 = scanner.nextInt();
 
         int sum = num1 + num2;
