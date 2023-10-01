@@ -19,20 +19,23 @@ public class SimpleAddtion {
      
   
         Scanner scanner = new Scanner(System.in);
-
+        // Get user input for the first number
         System.out.print("Enter the first number: ");
+        // validate that the input is a valid integer
         while (!scanner.hasNextInt()){
             System.out.println("Invalid input. Please enter a valid number");
             scanner.next(); // consume the valid input
         }
-         int num1 = scanner.nextInt();
-
+        // Assign the valid input to num1 
+        int num1 = scanner.nextInt();
+        // Get user input for the second number
         System.out.print("Enter the second number: ");
+       // validate that the input is a valid integer
         while (!scanner.hasNextInt()){
             System.out.println("Invalid input. Please enter a valid number");
             scanner.next(); //consume the valid input
         }
-        
+        //Assign the valid input to num2
         int num2 = scanner.nextInt();
 
         int sum = num1 + num2;
